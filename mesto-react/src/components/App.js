@@ -26,6 +26,7 @@ function App() {
 
     return (
         <div className="page">
+            <div className="container">
             <Header />
 
             <Main onEditProfile={handleEditProfileClick} onAddPlace={handleAddPlaceClick} onEditAvatar={handleEditAvatarClick} onCardClick={handleCardClick}/>
@@ -71,7 +72,7 @@ function App() {
             <ImagePopup link={selectedCard} onClose={closeAllPopups}/>
             
             <Footer />      
-          
+            </div>
         </div>
     );
 }
