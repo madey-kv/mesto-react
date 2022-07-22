@@ -1,0 +1,17 @@
+.button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+  padding: 0;
+  margin: 0;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
