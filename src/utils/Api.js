@@ -1,4 +1,4 @@
-    class ApiReact {
+    class Api {
     constructor(item) {
         this._baseUrl = item.baseUrl
         this._headers = item.headers
@@ -70,7 +70,7 @@
     }
 }
 
-const Api = new ApiReact({
+const api = new Api({
     baseUrl: "https://mesto.nomoreparties.co/v1/cohort-44/",
     headers: {
         authorization: 'ec409761-8205-4578-aa63-a715bc164b2a',
@@ -78,4 +78,4 @@ const Api = new ApiReact({
     }
 });
 
-export default Api;
+export default api;
