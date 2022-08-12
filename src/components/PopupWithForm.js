@@ -1,5 +1,4 @@
 import closeButton from "../images/Close-Button.svg";
-import React from "react";
 
 function PopupWithForm({name, title, isOpen, onClose, children}) {
     function handleOverlayClick(evt) {
@@ -13,7 +12,7 @@ function PopupWithForm({name, title, isOpen, onClose, children}) {
 
                 <h2 className="popup__title">{title}</h2>
 
-                <form className={`popup__form popup__form_${name}`} name={name} noValidate>
+                <form className={`popup__form popup__form_${name}`} name={name}>
                     {children}
                 </form>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import {useContext} from 'react';
 import Card from './Card.js';
 import editButtonSmall from "../images/Edit-Button-small.svg";
 import editButton from "../images/Edit-Button.svg";
@@ -7,7 +7,7 @@ import addButton from "../images/Add-Button.svg";
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function Main({cards, onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike, onCardDelete}) {
-    const currentUser = React.useContext(CurrentUserContext);
+    const currentUser = useContext(CurrentUserContext);
 
     return (
         <main className="content">
@@ -38,7 +38,16 @@ function Main({cards, onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCa
             </div>
             <section className="cards">
                 <ul className="cards__list">
-                    {cards.map((card) => <Card  key={card._id} card={card} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete}/>)}
+                    {cards.map((card) => (
+                        <Card
+                            key={card._id}
+                            card={card}
+                            onCardClick={onCardClick}
+                            onCardLike={onCardLike}
+                            onCardDelete={onCardDelete}
+                        />
+                      ))
+                    }
                 </ul>
             </section>
         </main>

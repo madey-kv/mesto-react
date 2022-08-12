@@ -1,18 +1,17 @@
-import React from 'react';
+import {useContext, useState, useEffect} from 'react';
 import {CurrentUserContext} from '../contexts/CurrentUserContext.js';
 import PopupWithForm from './PopupWithForm';
 
 function EditProfilePopup(props){
-    const currentUser = React.useContext(CurrentUserContext);
+    const currentUser = useContext(CurrentUserContext);
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
 
-    React.useEffect(()=>{
+    useEffect(()=>{
             setName(currentUser.name);
             setDescription(currentUser.about);
-        },[currentUser]
+        },[props.isOpen]
     );
-
-    const [name, setName] = React.useState('');
-    const [description, setDescription] = React.useState('');
 
     function handleChangeName(e){setName(e.target.value)};
     function handleChangeDescription(e){setDescription(e.target.value)};
@@ -35,12 +34,12 @@ function EditProfilePopup(props){
             buttonText="Сохранить">
             <div className="popup__form-item">
                 <input id="name" name="name" className="popup__item popup__item_type_name"
-                       placeholder="Ваше имя" required minLength="2" maxLength="40"  defaultValue={name} onChange={handleChangeName}/>
+                       placeholder="Ваше имя" required minLength="2" maxLength="40"  value={name} onChange={handleChangeName}/>
                 <span id="name-error" className="popup__error"></span>
             </div>
             <div className="popup__form-item">
                 <input id="description" name="description" className="popup__item popup__item_type_job"
-                       placeholder="Описание профиля" defaultValue={description} onChange={handleChangeDescription} required minLength="2" maxLength="200" />
+                       placeholder="Описание профиля" value={description} onChange={handleChangeDescription} required minLength="2" maxLength="200" />
                 <span id="description-error" className="popup__error"></span>
             </div>
             <button type="submit" onClick = {handleSubmit} className="button button_type_save">Cохранить
