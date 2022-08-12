@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/mesto-react/static/css/main.d5a3e8cf.css",
+    "main.js": "/mesto-react/static/js/main.1a87fcaa.js",
+    "static/js/787.5530211c.chunk.js": "/mesto-react/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.woff": "/mesto-react/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff?v=3.19": "/mesto-react/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/mesto-react/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/mesto-react/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2?v=3.19": "/mesto-react/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/mesto-react/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/logo.svg": "/mesto-react/static/media/logo.bad0f45a85a7a8272e00c91d5d7f5dbc.svg",
+    "static/media/Like-Button.svg": "/mesto-react/static/media/Like-Button.f8da7499c69b73a5d7fc.svg",
+    "index.html": "/mesto-react/index.html",
+    "static/media/delete.svg": "/mesto-react/static/media/delete.823b0cf1b0b7e9cb7cad209d1e19258f.svg",
+    "static/media/Like-Button-active.svg": "/mesto-react/static/media/Like-Button-active.fe17a515669479b1e649.svg",
+    "static/media/Edit-Button-small.svg": "/mesto-react/static/media/Edit-Button-small.2f7be95ab48bbff7d88c9518f6923f61.svg",
+    "static/media/Add-Button-big.svg": "/mesto-react/static/media/Add-Button-big.6f86ece55e54220c548502ff74831c2b.svg",
+    "static/media/Add-Button.svg": "/mesto-react/static/media/Add-Button.6f41966c71dd7895857fcaf57ea89b3f.svg",
+    "static/media/Edit-Button.svg": "/mesto-react/static/media/Edit-Button.a1892ea72cb87c8fc3aa6fbcc02b8d17.svg",
+    "static/media/change-photo.svg": "/mesto-react/static/media/change-photo.a086f758840ae814ecde.svg",
+    "static/media/Close-Button.svg": "/mesto-react/static/media/Close-Button.2ceb783afbab75916ddcbb98f868ff01.svg",
+    "main.d5a3e8cf.css.map": "/mesto-react/static/css/main.d5a3e8cf.css.map",
+    "main.1a87fcaa.js.map": "/mesto-react/static/js/main.1a87fcaa.js.map",
+    "787.5530211c.chunk.js.map": "/mesto-react/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5a3e8cf.css",
+    "static/js/main.1a87fcaa.js"
+  ]
+}
