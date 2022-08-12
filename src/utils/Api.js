@@ -52,6 +52,14 @@
         return this._fetch(`cards/${cardId}`, 'DELETE')
     }
 
+    updateLikeStatus(cardId, isLiked) {
+        if (!isLiked) {
+            return this.addLike(cardId);
+        } else {
+            return this.deleteLike(cardId);
+        }
+    }
+
     addLike(cardId) {
         return this._fetch(`cards/${cardId}/likes`, 'PUT')
     }
